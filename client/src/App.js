@@ -124,7 +124,7 @@ function App() {
         <HookedRouter>
           <GlobalStyle />
           <Root>
-            <SocketProvider url={process.env.REACT_APP_SERVER}>
+            <SocketProvider url={'http://192.168.1.3:8080'}>
               {baby !== null ? (
                 <>
                   <BabyJoin />

@@ -1,19 +1,19 @@
 version: "3"
 
 services:
-  mongo:
-    image: mongo:4.4
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: example
-      MONGO_INITDB_DATABASE: baby-tracker
-    volumes:
-      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+  # mongo:
+  #   image: mongo:4.4
+  #   environment:
+  #     MONGO_INITDB_ROOT_USERNAME: root
+  #     MONGO_INITDB_ROOT_PASSWORD: example
+  #     MONGO_INITDB_DATABASE: baby-tracker
+  #   volumes:
+  #     - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
 
   server:
-    image: mikebarkmin/baby-tracker:1.9.0
+    image: vmuthukrishnan/baby-tracker:1.9.0
     environment:
-      DATABASE_URL: mongodb://server:test@mongo:27017/baby-tracker
+      DATABASE_URL: mongodb+srv://root:root@cluster0.hbauptv.mongodb.net/baby-tracker?retryWrites=true&w=majority
 
     ports:
       - 8080:8080

@@ -1,0 +1,7 @@
+{
+    "name": "BabyTracker",
+    "integrations": {
+      "capacitor": {}
+    },
+    "type": "react"
+  }

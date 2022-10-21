@@ -1,0 +1,10 @@
+{
+    "appId": "in.co.venkatraman.BabyTracker",
+    "appName": "BabyTracker",
+    "bundledWebRuntime": false,
+    "npmClient": "npm",
+    "webDir": "build",
+    "cordova": {},
+    "server": {
+    }
+  }

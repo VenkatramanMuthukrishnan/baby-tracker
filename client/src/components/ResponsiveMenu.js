@@ -11,9 +11,9 @@ const SmallMenu = styled.nav`
   left: 0;
   right: 0;
   z-index: 99;
-  text-align: center;
+  text-align: left;
   background: ${props => props.theme.secondary};
-  min-height: 52px;
+  min-height: 72px;
 `;
 
 const LargeMenu = styled.nav`
@@ -23,7 +23,7 @@ const LargeMenu = styled.nav`
   right: 0;
   z-index: 99;
   display: block;
-  text-align: center;
+  text-align: left;
   background: ${props => props.theme.secondary};
   height: 80px;
 
@@ -33,6 +33,7 @@ const LargeMenu = styled.nav`
 const MenuIcon = styled.button`
   width: 48px;
   height: 48px;
+  margin: 16px;
   background: url(${props => props.icon});
   border: 0;
 

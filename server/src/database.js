@@ -6,7 +6,8 @@ mongoose.Promise = bluebird;
 
 function connectDB() {
   mongoose.connect(
-    process.env.DATABASE_URL,
+    // process.env.DATABASE_URL,
+    'mongodb+srv://root:root@cluster0.hbauptv.mongodb.net/baby-tracker?retryWrites=true&w=majority',
     {
       useNewUrlParser: true,
     },
